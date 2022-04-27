@@ -9,3 +9,5 @@ function charCount(e) {
     lastkey = document.getElementById('lastkey');
     lastkey.textContent = 'Last key in ASCII code: ' + e.keyCode;
 }
+el = document.getElementById('message');
+el.addEventListener('keyup', charCount, false);
